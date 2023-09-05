@@ -2,6 +2,7 @@ const chai = require("chai");
 const expect = chai.expect;
 const { isFive, isOdd, myRange } = require("../funcs");
 
+// Testing to see if the given "num" is 5
 describe("isFive(num)", () => {
   it("should return true if the num is 5 otherwise false", () => {
     const num1 = 5;
@@ -21,6 +22,7 @@ describe("isFive(num)", () => {
   });
 });
 
+// Testing to see if the given "number" is odd
 describe("isOdd(number)", () => {
   it("should return true if number is odd", () => {
     const num1 = 3;
@@ -61,6 +63,7 @@ describe("isOdd(number)", () => {
   });
 });
 
+// // Testing to see if the given "array" is incremented from min to max using step 
 describe("myRange(min, max, step)", () => {
   context("if step is not provided", () => {
     it("should return the correct array with default value step=1", () => {
